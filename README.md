@@ -6,4 +6,4 @@ There exist other methods to estimate this probability and the two most popular 
 
 Instead of the standard RWM we thought that it would be beneficial to use another method to sample from a distribution, namely the Bouncy Particle Sampler. 
 
-$x_i = 5 ~test$
+
