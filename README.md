@@ -1,9 +1,5 @@
-# Thesis
+# Bouncy Particle Sampler in rare event simulation
 
-The most straightforward, however inefficient, way to estimate the probability of the rare event is a simple Monte Carlo method. Here we would draw $N$ i.i.d. samples $\{X_1,X_2,\ldots,X_N\}$ and the estimator for the probability of the rare event would be $\#\left\{i:\mathbb{P}(S(X_i))>L)\right\}/N$ for $i = 1,\ldots,N$. So, on average we would have to simulate $10^4$ samples to see only one occurrence of the rare event. 
-
-There exist other methods to estimate this probability and the two most popular ones are importance sampling and splitting. In my thesis I will focus on the splitting method. I used "Simulation and Estimation of Extreme Quantiles and Extreme Probabilities" by Guyader as a starting point. They use the splitting method and a Random Walk Metropolis (RWM) algorithm to estimate the rare event probabilities. 
-
-Instead of the standard RWM we thought that it would be beneficial to use another method to sample from a distribution, namely the Bouncy Particle Sampler. 
+In this thesis we study the use of Piecewise Deterministic Markov Processes (PDMPs), such as the Zig-Zag process and the Bouncy Particle Sampler, in rare event probability estimation. We introduce both processes and illustrate how the methods work. To estimate the rare event probabilities we use the splitting method. We also analyze this method and show how the method can be applied by working out a simple example. To make the connection between PDMPs and the splitting method we introduce a setting which suites both well. We consider an example of rare event probabilities outside a d-dimensional sphere for a Gaussian random variable. We compare the results in time complexity, probability estimation, Effective Sample Size and distribution of thresholds between the use of a standard Metropolis-Hastings algorithm and the Bouncy Particle sampler. Furthermore results are obtained to express the eigenvalues of the stochastic process as a function of the boundary on a restricted domain, in particular for the case of the one-dimensional Zig-Zag process with a zero refreshment intensity.
 
 
